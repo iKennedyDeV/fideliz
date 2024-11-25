@@ -1,0 +1,19 @@
+spring:
+   application:
+      name: fideliz
+   datasource:
+      url: 'jdbc:h2:mem:testdb'
+      driverClassName: org.h2.Driver
+      username: fidelizadm
+      password: fidelizadm
+   jpa:
+      hibernate:
+       ddl-auto: none
+      database-plataform: org.hibernate.dialect.h2Dialect
+   h2:
+      console:
+       enabled: true
+   main:
+      allow-bean-definition-overriding: true
+server:
+   port: '8080'

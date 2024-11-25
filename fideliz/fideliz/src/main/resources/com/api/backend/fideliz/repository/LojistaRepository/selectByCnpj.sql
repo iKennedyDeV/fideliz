@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM LOJISTA WHERE cnpj = :cnpj;

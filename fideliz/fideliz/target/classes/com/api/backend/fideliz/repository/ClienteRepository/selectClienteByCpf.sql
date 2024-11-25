@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM CLIENTE WHERE cpf = :cpf;
