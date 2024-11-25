@@ -15,13 +15,10 @@ import org.springframework.stereotype.Repository;
 @RegisterBeanMapper(RecompensaMapper.class)
 public interface RecompensaRepository {
     @SqlQuery
-    Recompensa findByIdLojista(@Bind("id_lojista") Long idLojista);
+    Recompensa findByIdLojista(@Bind("idLojista") Long idLojista);
     @SqlUpdate
     void adicionarRecompensa(@BindBean Recompensa recompensa);
 
     @SqlUpdate
     void atualizarRecompensa(@BindBean Recompensa recompensa);
-
-    @SqlQuery
-    Long findByCnpj(@Bind("cnpj") String cnpj);
 }

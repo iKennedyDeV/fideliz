@@ -1,1 +1,1 @@
-SELECT id_lojista FROM LOJISTA WHERE cnpj = :cnpj
+SELECT * FROM RECOMPENSA WHERE id_lojista = :idLojista

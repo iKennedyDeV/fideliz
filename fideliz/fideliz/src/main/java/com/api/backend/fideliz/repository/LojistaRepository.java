@@ -21,4 +21,7 @@ public interface LojistaRepository {
 
     @SqlUpdate
     void atualizarLojista(@BindBean LojistaRequest lojistaRequest);
+
+    @SqlQuery
+    Long findIdByCnpj(@Bind("cnpj") String cnpj);
 }
